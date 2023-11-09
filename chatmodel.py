@@ -10,14 +10,14 @@ from langchain.prompts.chat import (
 from langchain.schema import AIMessage, HumanMessage, SystemMessage
 
 # Set the OpenAI API key as an environment variable
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = " "
 
 # Now you can access it using os.environ["OPENAI_API_KEY"]
 openai_api_key = os.environ["OPENAI_API_KEY"]
 
 chat = ChatOpenAI(temperature=0)
 
-chat = ChatOpenAI(temperature=0, openai_api_key="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", openai_organization="YOUR_ORGANIZATION_ID")
+chat = ChatOpenAI(temperature=0, openai_api_key="", openai_organization="YOUR_ORGANIZATION_ID")
 
 messages = [
     SystemMessage(
